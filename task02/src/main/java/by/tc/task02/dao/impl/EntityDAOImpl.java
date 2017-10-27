@@ -248,7 +248,7 @@ public class EntityDAOImpl implements EntityDAO {
 		BufferedReader bufferedReader = null;
 		try {   
 			ClassLoader classLoader = getClass().getClassLoader();
-			File file = new File(classLoader.getResource("resource.xml").getFile());
+			File file = new File(classLoader.getResource("task02.xml").getFile());
 			bufferedReader = new BufferedReader(new FileReader(file));
 			entity = getEntity(bufferedReader);
 
