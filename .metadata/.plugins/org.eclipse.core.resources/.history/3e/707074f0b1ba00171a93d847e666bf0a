@@ -1,0 +1,7 @@
+package by.tc.task02.service.exeption;
+
+import by.tc.task02.dao.exeption.DaoExeption;
+
+public class ServiceExeption extends DaoExeption {
+
+}

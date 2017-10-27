@@ -1,0 +1,28 @@
+package by.tc.task02.main;
+
+
+import by.tc.task02.entity.Entity;
+import by.tc.task02.service.EntityService;
+import by.tc.task02.service.ServiceFactory;
+import by.tc.task02.service.exeption.ServiceExeption;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Entity entity = null;
+		
+		ServiceFactory factory = ServiceFactory.getInstance();
+		EntityService service = factory.getEntityService();
+
+		try {
+			entity = service.parse();
+		} catch (ServiceExeption e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		PrintEntity.print(entity);
+
+	}
+
+}

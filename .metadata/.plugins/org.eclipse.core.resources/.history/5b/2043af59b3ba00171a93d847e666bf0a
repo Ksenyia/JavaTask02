@@ -1,0 +1,10 @@
+package by.tc.task02.main;
+
+import by.tc.task02.entity.Entity;
+
+public class PrintEntity {
+	public static void print(Entity entity) {
+		System.out.println(entity);
+		
+	}
+}

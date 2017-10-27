@@ -1,0 +1,27 @@
+package by.tc.task02.main;
+
+import by.tc.task02.entity.Entity;
+import by.tc.task02.service.EntityService;
+import by.tc.task02.service.ServiceFactory;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Entity appliance;
+
+		ServiceFactory factory = ServiceFactory.getInstance();
+		EntityService service = factory.getEntityService();
+
+		//////////////////////////////////////////////////////////////////
+		
+		Criteria<Oven> criteriaOven = new Criteria<Oven>();
+		criteriaOven.add(Oven.CAPACITY, 3);
+		criteriaOven.setApplianceType("Oven");
+		appliance = service.find(criteriaOven);
+		
+		PrintApplianceInfo.print(appliance);
+
+	}
+
+}

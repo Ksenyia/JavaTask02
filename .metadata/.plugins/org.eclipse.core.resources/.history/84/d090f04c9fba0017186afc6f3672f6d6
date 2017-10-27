@@ -1,0 +1,13 @@
+package by.tc.task02.main;
+
+import by.tc.task02.entity.Entity;
+
+public class PrintEntity {
+	public static void print(Entity entity) {
+		// you may add your own code here
+		System.out.println("yj");
+		System.out.println(entity);
+		System.out.println("yj");
+		
+	}
+}

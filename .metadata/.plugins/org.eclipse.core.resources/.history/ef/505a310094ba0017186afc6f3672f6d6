@@ -1,0 +1,23 @@
+<breakfast-menu>dio
+jhh
+
+
+njnm<food id  =  "1" wx="d">
+
+	<name>Belgian Waffles</name>
+	
+	<price>$5.95</price>
+	
+	
+	</food>
+	
+		<food1 id = "2" wx="d j ">
+		
+	<name>Strawberry Belgian Waffles</name>
+	
+	<price>$7.95</price>	
+	
+	</food1>
+	
+
+</breakfast-menu>

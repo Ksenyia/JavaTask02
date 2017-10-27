@@ -1,0 +1,13 @@
+package by.tc.task02.service.impl;
+
+import by.tc.task02.entity.Entity;
+import by.tc.task02.service.EntityService;
+
+public class EntityServiceImpl implements EntityService {
+
+	public Entity parse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

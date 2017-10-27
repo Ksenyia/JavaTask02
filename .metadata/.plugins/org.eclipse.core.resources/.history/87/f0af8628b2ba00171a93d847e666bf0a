@@ -1,0 +1,19 @@
+package by.tc.task02.service.impl;
+
+import by.tc.task02.dao.DAOFactory;
+import by.tc.task02.dao.EntityDAO;
+import by.tc.task02.dao.exeption.DaoExeption;
+import by.tc.task02.entity.Entity;
+import by.tc.task02.service.EntityService;
+
+public class EntityServiceImpl implements EntityService {
+
+	public Entity parse() throws DaoExeption {
+		DAOFactory factory = DAOFactory.getInstance();
+		EntityDAO entityDAO = factory.getEntityDAO();
+		Entity entity = new Entity();
+		entity = entityDAO.parse();
+		return entity;
+	}
+
+}

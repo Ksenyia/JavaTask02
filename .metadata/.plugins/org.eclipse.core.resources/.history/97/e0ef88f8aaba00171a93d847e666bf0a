@@ -1,0 +1,21 @@
+package by.tc.task02.dao.exeption;
+
+import java.io.IOException;
+
+public class daoExeptio extends IOException {
+	public MyOwnException () {
+
+    }
+
+    public MyOwnException (String message) {
+        super (message);
+    }
+
+    public MyOwnException (Throwable cause) {
+        super (cause);
+    }
+
+    public MyOwnException (String message, Throwable cause) {
+        super (message, cause);
+    }
+}

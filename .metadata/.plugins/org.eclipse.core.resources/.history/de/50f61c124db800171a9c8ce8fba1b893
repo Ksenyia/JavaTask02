@@ -1,0 +1,5 @@
+package by.tc.task02.dao.Impl;
+
+public final class DAOFactory {
+
+}

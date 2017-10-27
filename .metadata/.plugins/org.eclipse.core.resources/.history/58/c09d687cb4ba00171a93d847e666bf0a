@@ -1,0 +1,19 @@
+package by.tc.task02.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import by.tc.task02.entity.Entity;
+
+public class PrintEntity {
+	public static void print(Entity entity) {
+		
+		String name = entity.getName();
+		String character = entity.getCharacter();
+		ArrayList<Entity>list = entity.getList();
+		Map<String, String> attributes =  entity.getAttributes();
+		System.out.println(entity);
+		
+	}
+}

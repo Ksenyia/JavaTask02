@@ -1,0 +1,92 @@
+package by.tc.task02.entity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Entity {
+	private String name;
+	private String character;
+	public String getCharacter() {
+		return character;
+	}
+
+	public void setCharacter(String character) {
+		this.character = character;
+	}
+	private ArrayList<Entity> list;
+	private HashMap<String,String> attributes;
+	
+	public Entity(){
+		name = "";
+		character = "";
+		list = new ArrayList<Entity>();
+		attributes = new HashMap<String, String>();
+	}
+	
+	public Entity(Entity entity){
+		this.name = entity.name;
+		this.character = entity.character;
+		for(Entity singleList : entity.list)
+		{
+			if(!singleList.isEmpty()){
+				this.setNewEntity(singleList);
+			}
+		}
+		if(entity.attributes!=null){
+			this.attributes.putAll(entity.attributes);
+		}
+
+	}
+
+	public Map<String, String> getAttributes() {
+		return attributes;
+	}
+
+	public void setAttributes(HashMap<String, String> attributes) {
+		this.attributes = attributes;
+	}
+
+	public static int getDeep(Entity entity){
+		if(entity.list.isEmpty()){
+			return 1;
+		}
+		int count = 1;
+		for(Entity el : entity.list){
+			count+= getDeep(el);
+		}
+		return count;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setNewEntity(Entity entity) {
+		this.list.add(entity);
+	}
+	@Override
+	public String toString() {
+		return "Entity [name=" + name + ", character=" + character + ", attributes=" + attributes + ", list="
+				+ list +  "]";
+	}
+	public boolean isEmpty(){
+		System.out.print(name.isEmpty());
+		if (name!=null||!name.isEmpty()){
+			return false;
+		}
+		if (!list.isEmpty()){
+			return false;
+		}
+		if (!attributes.isEmpty()){
+			return false;
+		}
+		if (!character.isEmpty()){
+			return false;
+		}
+		return true;
+	}
+
+}

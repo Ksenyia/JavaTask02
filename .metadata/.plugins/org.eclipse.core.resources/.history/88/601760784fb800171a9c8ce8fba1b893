@@ -1,0 +1,5 @@
+package by.tc.task02.service;
+
+public final class ServiceFactory {
+
+}

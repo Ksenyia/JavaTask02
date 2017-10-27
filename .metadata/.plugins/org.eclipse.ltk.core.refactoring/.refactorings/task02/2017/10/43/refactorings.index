@@ -1,0 +1,18 @@
+1508802137723	Delete element
+1508802681491	Move compilation unit
+1508802843514	Delete element
+1508802872433	Delete element
+1508881715478	Extract method 'goToNextLine'
+1508894311008	Extract method 'toNextLine'
+1508923170811	Extract method 'addCharacter'
+1508923230014	Extract method 'addAttributes'
+1508923430722	Extract method 'closeTag'
+1508939817897	Extract method 'goToNextLine'
+1508945960609	Extract method 'simpleAddCharacter'
+1508946292487	Extract method 'addCharacterFromNewLine'
+1508946567353	Extract method 'addLinesToCharacter'
+1508967820900	Extract method 'addFirstEntity'
+1508969032307	Extract method 'addDataToEntity'
+1509013035340	Extract method 'goToNextLine'
+1509058073104	Extract method 'getNewEntity'
+1509062913611	Delete element
